@@ -1,9 +1,20 @@
 .select {
+    width: 200px;
+  padding: 8px 12px; 
+  border: 2px solid #ccc;
+  border-radius: 4px; 
+  background-color: #fff; 
+  cursor: pointer; 
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .select:focus {
+    outline: none; 
+    border-color: #66afe9; 
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
 }
 
 
 .option:hover {
+    background-color: #f0f0f0; 
 }

@@ -19,5 +19,18 @@ html {
 }
 
 .select {
-
+    padding: 8px 12px; /* внутренний отступ */
+  border: 2px solid var(--color); /* рамка с цветом темы */
+  border-radius: 4px; /* скругление углов */
+  background-color: var(--background); /* фон темы */
+  color: var(--color); /* цвет текста */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
+.select:focus {
+    outline: none; /* убираем стандартный outline */
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* тень при фокусе */
+    border-color: var(--color);
+  }
